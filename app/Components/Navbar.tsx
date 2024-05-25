@@ -1,17 +1,14 @@
 import Link from "next/link";
 import React from "react";
+import ReUsableButton from "./ReUsableButton";
 
 const Navbar = () => {
   return (
-    <div className="border-b-2 border-prod flex w-full justify-center">
-      <div className="min-w-[960px] flex h-full items-center justify-between mr-24">
-        <div className="flex justify-between w-full h-full align-middle">
-          <Link href="#" passHref>
-            <img
-              src="Logo Figma.png"
-              width="150px"
-              className=" my-4 max-h-[36.6px]"
-            ></img>
+    <div className="border-b-2 border-prod flex w-full justify-center flex-wrap">
+      <div className="max-w-[960px] w-[900px] flex h-full items-center justify-between mr-24">
+        <div className="flex justify-between w-full h-full align-middle flex-wrap">
+          <Link href="/" passHref>
+            <img src="Logo Figma SVG.svg" width={150} className="my-4"></img>
           </Link>
           <div className="flex items-center gap-4">
             <Link
@@ -42,8 +39,8 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex items-center justify-end">
-        <Link href="#" className=" underline hover:text-prod">
-          Login
+        <Link href="/Login" className=" underline hover:text-prod" passHref>
+          <ReUsableButton>Login</ReUsableButton>
         </Link>
       </div>
     </div>

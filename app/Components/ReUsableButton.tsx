@@ -14,7 +14,7 @@ export default function ReUsableButton({
     <>
       <button
         className={twMerge(
-          "text-[#fff] text-lg py-2 px-4 bg-blackBackground border-2 w-fit rounded-md hover:bg-prod ease-in-out duration-100 shadow-md shadow-[#000000] focus:outline-none focus:ring-1 focus:ring-prod",
+          "text-[#fff] text-lg py-2 px-4 border-prod bg-blackBackground border-2 w-fit rounded-md hover:bg-prod ease-in-out duration-100 shadow-md shadow-[#000000] focus:outline-none focus:ring-1 focus:ring-prod",
           className
         )}
         {...props}

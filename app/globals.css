@@ -6,3 +6,13 @@ body {
   background-color: #242424;
   color: #fff;
 }
+
+@keyframes ping {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
