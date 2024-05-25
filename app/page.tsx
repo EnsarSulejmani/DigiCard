@@ -6,7 +6,7 @@ export default function Home() {
       {/* Background Image */}
       <img
         src="Man.jpg"
-        className="w-full h-[40dvh] object-cover position absolute -z-20"
+        className="w-full h-full object-cover position absolute -z-20"
       ></img>
 
       {/* Black Background */}
@@ -31,7 +31,7 @@ export default function Home() {
         <div>
           <img
             src="Logo Figma SVG.svg"
-            className="fill-prod "
+            className="fill-prod  "
             width={600}
           ></img>
         </div>

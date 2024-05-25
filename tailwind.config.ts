@@ -19,6 +19,7 @@ const config: Config = {
       white: "#FFFFFF",
       black: "#000000",
       blackBackground: "#242424",
+      light: "#868686",
 
       // Extra Colors
       blueProd: "#080A3F",
