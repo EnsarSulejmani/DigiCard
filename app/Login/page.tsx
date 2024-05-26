@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import ReUsableButton from "../Components/ReUsableButton";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -10,6 +10,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
+  const { data: session } = useSession();
 
   const handleLogin = async (event: React.FormEvent) => {
     event.preventDefault();
@@ -24,7 +25,7 @@ const Login = () => {
       console.error("Error logging in:", result.error);
     } else {
       // Redirect to a protected page or dashboard
-      router.push("/Dashboard");
+      router.push(`/Dashboard/${session?.user?.name}/123`);
     }
   };
 

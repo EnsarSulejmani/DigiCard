@@ -29,7 +29,7 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              href="/Dashboard"
+              href={`/Dashboard/${session?.user?.name}/123`}
               className="transition ease-in-out hover:bg-prod py-5"
             >
               Dashboard
